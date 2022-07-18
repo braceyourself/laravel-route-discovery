@@ -15,6 +15,7 @@ use Spatie\RouteDiscovery\PendingRouteTransformers\HandleUrisOfNestedControllers
 use Spatie\RouteDiscovery\PendingRouteTransformers\HandleWheresAttribute;
 use Spatie\RouteDiscovery\PendingRouteTransformers\MoveRoutesStartingWithParametersLast;
 use Spatie\RouteDiscovery\PendingRouteTransformers\RejectDefaultControllerMethodRoutes;
+use Spatie\RouteDiscovery\PendingRouteTransformers\RejectConstructorMethod;
 
 class Config
 {
@@ -25,6 +26,7 @@ class Config
     {
         return [
             RejectDefaultControllerMethodRoutes::class,
+            RejectConstructorMethod::class,
             HandleDoNotDiscoverAttribute::class,
             AddControllerUriToActions::class,
             HandleUrisOfNestedControllers::class,
