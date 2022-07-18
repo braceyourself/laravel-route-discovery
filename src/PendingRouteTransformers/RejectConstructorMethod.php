@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http;
+namespace Spatie\RouteDiscovery\PendingRouteTransformers;
 
 use Illuminate\Support\Collection;
 use Spatie\RouteDiscovery\PendingRoutes\PendingRoute;
